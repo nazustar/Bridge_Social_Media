@@ -10,6 +10,6 @@ public class ShortVideo extends Content{
 
     @Override
     protected String createMessage(){
-        return "Publishing a ShortVideo";
+        return "Publishing a Short Video";
     }
 }
