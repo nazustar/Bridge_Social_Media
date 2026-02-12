@@ -10,6 +10,6 @@ public class ThreadContent extends Content{
 
     @Override
     protected String createMessage(){
-        return "Hola";
+        return "Publishing a Thread";
     }
 }
