@@ -11,16 +11,23 @@ public class Main {
         Platform tiktok = new Tiktok();
         Platform twitter = new Twitter();
 
-        Content photo = new Photo(instagram);
-        photo.publish();
-
         Content story = new Story(tiktok);
+        Content photo = new Photo(instagram);
+        Content shortVideo = new ShortVideo(youtube);
+        Content threadContent = new ThreadContent(twitter);
+        
+        photo.publish();
         story.publish();
 
         story.setPlatform(instagram);
         story.publish();
 
+        shortVideo.publish();
 
+        shortVideo.setPlatform(tiktok);
+        shortVideo.publish();
+        
+        threadContent.publish();
 
     }
 }
