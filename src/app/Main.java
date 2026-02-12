@@ -14,9 +14,8 @@ public class Main {
         Content story = new Story(instagram);
         story.publish();
 
-        Content thread = new Thread(instagram);
+        Content thread = new ThreadContent(instagram);
         thread.publish();
-
 
     }
 }

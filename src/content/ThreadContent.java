@@ -1,10 +1,10 @@
 package content;
 
-import platform.Platform;;
+import platform.Platform;
 
-public class Thread extends Content{
+public class ThreadContent extends Content{
 
-    public Thread(Platform platform) {
+    public ThreadContent(Platform platform) {
         super(platform);
     }
 
