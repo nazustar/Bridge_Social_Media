@@ -15,5 +15,9 @@ public abstract class Content {
     public void publish() {
         platform.publish(createMessage());
     }
+    
+    public void setPlatform(Platform platform){
+        this.platform = platform;
+    }
 
 }

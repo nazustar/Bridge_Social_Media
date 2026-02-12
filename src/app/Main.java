@@ -7,15 +7,20 @@ public class Main {
     public static void main(String[] args) {
 
         Platform instagram = new Instagram();
+        Platform youtube = new Youtube();
+        Platform tiktok = new Tiktok();
+        Platform twitter = new Twitter();
 
         Content photo = new Photo(instagram);
         photo.publish();
 
-        Content story = new Story(instagram);
+        Content story = new Story(tiktok);
         story.publish();
 
-        Content thread = new ThreadContent(instagram);
-        thread.publish();
+        story.setPlatform(instagram);
+        story.publish();
+
+
 
     }
 }
